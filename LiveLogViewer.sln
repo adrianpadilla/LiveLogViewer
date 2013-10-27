@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLogViewer", "LiveLogViewer\LiveLogViewer.csproj", "{8E5570B2-7C96-402F-BDE3-3725E989CC01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLogViewer", "LiveLogViewer\LiveLogViewer.csproj", "{86A98091-81D1-48CC-B467-CF55FE4E1FB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLogViewer.Tests", "LiveLogViewer.Tests\LiveLogViewer.Tests.csproj", "{18674D5F-CD79-4504-95A1-F38960325A08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLogViewer.Tests", "LiveLogViewer.Tests\LiveLogViewer.Tests.csproj", "{201BB91D-1BE7-4657-B72D-83CECBCA22C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8E5570B2-7C96-402F-BDE3-3725E989CC01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E5570B2-7C96-402F-BDE3-3725E989CC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E5570B2-7C96-402F-BDE3-3725E989CC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E5570B2-7C96-402F-BDE3-3725E989CC01}.Release|Any CPU.Build.0 = Release|Any CPU
-		{18674D5F-CD79-4504-95A1-F38960325A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18674D5F-CD79-4504-95A1-F38960325A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18674D5F-CD79-4504-95A1-F38960325A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18674D5F-CD79-4504-95A1-F38960325A08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86A98091-81D1-48CC-B467-CF55FE4E1FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A98091-81D1-48CC-B467-CF55FE4E1FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A98091-81D1-48CC-B467-CF55FE4E1FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A98091-81D1-48CC-B467-CF55FE4E1FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201BB91D-1BE7-4657-B72D-83CECBCA22C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201BB91D-1BE7-4657-B72D-83CECBCA22C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201BB91D-1BE7-4657-B72D-83CECBCA22C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201BB91D-1BE7-4657-B72D-83CECBCA22C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
