@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLogViewer", "LiveLogViewer\LiveLogViewer.csproj", "{8E5570B2-7C96-402F-BDE3-3725E989CC01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLogViewer.Tests", "LiveLogViewer.Tests\LiveLogViewer.Tests.csproj", "{18674D5F-CD79-4504-95A1-F38960325A08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E5570B2-7C96-402F-BDE3-3725E989CC01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5570B2-7C96-402F-BDE3-3725E989CC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5570B2-7C96-402F-BDE3-3725E989CC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5570B2-7C96-402F-BDE3-3725E989CC01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18674D5F-CD79-4504-95A1-F38960325A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18674D5F-CD79-4504-95A1-F38960325A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18674D5F-CD79-4504-95A1-F38960325A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18674D5F-CD79-4504-95A1-F38960325A08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
