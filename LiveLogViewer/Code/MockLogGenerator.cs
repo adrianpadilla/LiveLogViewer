@@ -20,7 +20,7 @@ namespace LiveLogViewer
                 list.Add(new LogEntry()
                 {
                      Activity = 10000,
-                     EntryDateTime = DateTime.Now,
+                     EntryDateTime = DateTime.Now.AddHours(-1),
                      Message = string.Format("Mock Message #{0:d}: {1}", i, Guid.NewGuid().ToString())
                 });
             }

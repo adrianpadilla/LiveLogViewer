@@ -1,6 +1,82 @@
-﻿@{
+﻿@model int
+
+@{
     ViewBag.Title = "View";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>View</h2>
+
+<p>Looking at @Model.ToString() log</p>
+
+<h1>PAVC Live Log Viewer</h1>
+<h2>Watching logs for Activity with ID @Model.ToString()</h2>
+
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript">
+ 
+function addWindowLoadAction(func) {
+	if (window.addEventListener) // W3C standard
+	window.addEventListener('load', func, false); // CWS **not** ‘onload’
+	else if (window.attachEvent) // Microsoft
+	window.attachEvent('onload', func);
+};
+ 
+var lastLogTime = null;
+
+var startPolling = function () {
+    //$('#btnTest2').click(function () {
+    //debugger;
+    jQuery.support.cors = true;
+        var query;
+        if (lastLogTime == null)
+            query = "http://localhost:52680/odata/Log?$top=1&$filter=Activity%20eq%20" + @Model.ToString() +"";
+        else
+            query = "http://localhost:52680/odata/Log?$filter=EntryDateTime%20gt%20datetime'" + lastLogTime + "'%20and%20Activity%20eq%20" + @Model.ToString() + "";
+    
+        //alert(topDatetime);
+        $.ajax({
+            url: query,
+            dataType: 'json',
+            success: printResults
+        });
+
+	//});
+};
+
+
+    //Appends the result in the screen
+    var printResults = function (data) {
+        //debugger;
+    if ((data.value.length>0)) {
+        for (var i = 0; i < data.value.length; i++) {
+            $('#result').append("<li>" + data.value[i].Message + "</li>");
+
+            //Save time of last log
+            lastLogTime = data.value[data.value.length - 1].EntryDateTime;
+            
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+    }
+    
+}
+
+    window.onload = function () {
+
+    $(document).ready(function () {
+        startPolling();
+        setInterval(startPolling, 500);
+    });
+    };
+
+</script>
+ 
+<form id="form1" runat="server" name="form1">
+    <div>
+        <br/>
+        <ul id='loc'>
+            <span id="result"></span>
+        </ul>
+    </div>
+</form>
+

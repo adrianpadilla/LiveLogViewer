@@ -184,7 +184,7 @@
     <Compile Include="Code\MockLogGenerator.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LogController.cs" />
+    <Compile Include="WebApiControllers\LogController.cs" />
     <Compile Include="Controllers\LogsController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
