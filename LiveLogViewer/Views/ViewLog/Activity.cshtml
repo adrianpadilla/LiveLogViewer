@@ -1,16 +1,11 @@
 ﻿@model int
 
 @{
-    ViewBag.Title = "View";
+    ViewBag.Title = "Live Log Viewer";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>View</h2>
-
-<p>Looking at @Model.ToString() log</p>
-
-<h1>PAVC Live Log Viewer</h1>
-<h2>Watching logs for Activity with ID @Model.ToString()</h2>
+<h1>Watching logs for Activity with ID @Model.ToString()</h1>
 
 <script src="~/Scripts/jquery-1.7.1.min.js"></script>
 <script language="javascript" type="text/javascript">
@@ -25,7 +20,6 @@ function addWindowLoadAction(func) {
 var lastLogTime = null;
 
 var startPolling = function () {
-    //$('#btnTest2').click(function () {
     //debugger;
     jQuery.support.cors = true;
         var query;

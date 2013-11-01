@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace LiveLogViewer.Controllers
 {
-    public class LogsController : Controller
+    public class ViewLogController : Controller
     {
-        public ActionResult ViewLog(int id)
+        public ActionResult Activity(int id)
         {
             return View(id);
         }
